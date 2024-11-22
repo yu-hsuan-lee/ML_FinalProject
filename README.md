@@ -7,7 +7,6 @@ This project uses Support Vector Machines (SVMs) to classify the quality of whit
 ## **Project Overview**
 
 - **Author:** Emily Lee  
-- **Course:** ITP-449  
 - **Description:** This Python program analyzes a wine dataset, identifies the most influential features, and classifies wine quality using SVMs. The model's performance is evaluated using accuracy and a confusion matrix.
 
 ---
