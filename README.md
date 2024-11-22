@@ -139,8 +139,8 @@ The dataset used is **Mushroom Classification** (available on [Kaggle](https://w
 
 - **Input Mushroom Characteristics:**
   ```python
-  [5, 2, 4, 1, 8, 1, 0, 1, 4, 0, 2, 2, 2, 7, 7, 0, 2, 1, 4, 7, 3, 5]
-```
+  [5, 2, 4, 1, 8, 1, 0, 1, 4, 0, 2, 2, 2, 7, 7, 0, 2, 1, 4, 7, 3, 5] ```
+
 - **Prediction:** Poisonous (`1`)
 
 ---
