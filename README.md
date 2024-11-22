@@ -163,7 +163,6 @@ The dataset used is **Mushroom Classification** (available on [Kaggle](https://w
 
 - Use additional classifiers like **Random Forest** or **Gradient Boosted Trees** to compare performance.
 - Perform feature importance analysis to identify the most significant predictors.
-- Optimize preprocessing by handling imbalanced classes (if applicable).
 
 ---
 
