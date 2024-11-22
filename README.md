@@ -76,3 +76,106 @@ The dataset is **Wine Quality - White Wines**, obtained from the [UCI Machine Le
   - `pandas`
   - `matplotlib`
   - `scikit-learn`
+
+---
+# **Project 2: Mushroom Classification with Optimized Decision Tree**
+
+This project utilizes a Decision Tree Classifier to predict whether a mushroom is **edible** or **poisonous** based on its physical characteristics. A randomized search with cross-validation is employed to optimize the model’s hyperparameters, and the results are visualized through a confusion matrix and a decision tree plot.
+
+---
+
+## **Project Overview**
+
+- **Author:** Emily Lee 
+- **Description:** The project uses a labeled mushroom dataset to classify mushrooms as edible or poisonous. It includes:
+  - Preprocessing of categorical data.
+  - Randomized hyperparameter tuning for the Decision Tree model.
+  - Visualization of the confusion matrix and optimized decision tree.
+
+---
+
+## **Features**
+
+- **Data Preprocessing:**
+  - All categorical features are encoded using `LabelEncoder`.
+  - The dataset is split into training and testing sets (70% train, 30% test).
+
+- **Model Training:**
+  - A Decision Tree Classifier is optimized using `RandomizedSearchCV` to search for the best combination of:
+    - `criterion`: ['entropy', 'gini']
+    - `max_depth`
+    - `min_samples_split`
+    - `min_samples_leaf`
+  - The best model is used for predictions and evaluation.
+
+- **Visualizations:**
+  - A **Confusion Matrix** shows the classification performance with accuracy.
+  - A **Decision Tree Plot** illustrates the structure of the trained classifier.
+
+---
+
+## **Dataset**
+
+The dataset used is **Mushroom Classification** (available on [Kaggle](https://www.kaggle.com/uciml/mushroom-classification)). It contains data on 8,124 mushrooms with 22 categorical features describing their physical characteristics.
+
+### **Target Variable:**
+- `class`:
+  - `0` = Edible
+  - `1` = Poisonous
+
+---
+
+## **Results**
+
+### **Best Hyperparameters:**
+```python
+{
+  'min_samples_split': 9,
+  'min_samples_leaf': 2,
+  'max_depth': 66,
+  'criterion': 'entropy'
+}
+
+---
+### **Prediction for a New Mushroom**
+
+- **Input Mushroom Characteristics:**
+  ```python
+  [5, 2, 4, 1, 8, 1, 0, 1, 4, 0, 2, 2, 2, 7, 7, 0, 2, 1, 4, 7, 3, 5]
+- **Prediction:** Poisonous (`1`)
+
+---
+
+### **Model Accuracy**
+
+- The model achieves **100% accuracy** on the test set.
+
+---
+
+### **Visualizations**
+
+- **Confusion Matrix and Decision Tree Plot:**
+  - The decision tree structure is visualized alongside the confusion matrix.
+![output](https://github.com/user-attachments/assets/11a42331-ede1-4b98-b2b6-d172e2625edb)
+
+---
+
+### **Future Improvements**
+
+- Use additional classifiers like **Random Forest** or **Gradient Boosted Trees** to compare performance.
+- Perform feature importance analysis to identify the most significant predictors.
+- Optimize preprocessing by handling imbalanced classes (if applicable).
+
+---
+
+### **Dependencies**
+
+- **Python 3.7+**
+- Required libraries:
+  - `numpy`
+  - `pandas`
+  - `matplotlib`
+  - `scikit-learn`
+
+
+
